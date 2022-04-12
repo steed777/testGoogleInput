@@ -28,7 +28,7 @@ public class TestGoogleInput {
     @Test
     public void testgoogleinput()  {
             driver.get("https://www.google.ru/");
-            element = driver.findElement(By.cssSelector(""));//[name="q"]
+            element = driver.findElement(By.cssSelector("//[name=\"q\"]"));//[name="q"]
             element.sendKeys("купить кофемашину bork c804");
             element.click();
             element.sendKeys(Keys.ENTER);

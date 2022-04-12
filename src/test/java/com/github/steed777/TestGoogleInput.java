@@ -28,15 +28,11 @@ public class TestGoogleInput {
     @Test
     public void testgoogleinput()  {
             driver.get("https://www.google.ru/");
-            element = driver.findElement(By.cssSelector("//[name=\"q\"]"));//[name="q"]
+            element = driver.findElement(By.xpath("//input[@title = 'Поиск' ]"));//[name="q"]
             element.sendKeys("купить кофемашину bork c804");
             element.click();
             element.sendKeys(Keys.ENTER);
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("_H-0NYLCBCOvzqwHflIjoBg1")));//
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(text(), 'BORK C804')]")));//
     }
     @After
     public void stopDriver(){

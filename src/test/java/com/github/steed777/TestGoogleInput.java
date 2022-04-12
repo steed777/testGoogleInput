@@ -27,14 +27,15 @@ public class TestGoogleInput {
     }
     @Test
     public void testgoogleinput()  {
-        try {
             driver.get("https://www.google.ru/");
-            element = driver.findElement(By.cssSelector("[name=\"q\"]"));
+            element = driver.findElement(By.cssSelector(""));//[name="q"]
             element.sendKeys("купить кофемашину bork c804");
             element.click();
             element.sendKeys(Keys.ENTER);
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("_H-0NYLCBCOvzqwHflIjoBg1")));
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("_H-0NYLCBCOvzqwHflIjoBg1")));//
         }catch (Exception e) {
+            e.printStackTrace();
         }
     }
     @After

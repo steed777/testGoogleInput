@@ -2,4 +2,4 @@ Feature: Application framework
 
   Scenario:Checking google search
     Given Go to the testing page
-    When Ввод в поле поиска 'купить кофемашину bork c804' нажать найти
+    When Entering in the search field 'buy a bork c804 coffee machine' click find

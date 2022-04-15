@@ -5,7 +5,7 @@ import com.github.steed777.common.Browser;
 
 import com.github.steed777.flow.GoogleFlow;
 
-import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.When;
 
 
@@ -18,7 +18,7 @@ public class GoogleStep {
 
     }
 
-    @When("Ввод в поле поиска 'купить кофемашину bork c804' нажать найти")
+    @When("Entering in the search field 'buy a bork c804 coffee machine' click find")
     public void authorizationUser() {
         GoogleFlow.enterNameMachine();
     }

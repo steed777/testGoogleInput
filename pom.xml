@@ -93,6 +93,12 @@
                     https://repo.jenkins-ci.org/maven-repo1/io/qameta/allure/allure-commandline/2.17.3/allure-commandline-2.17.3.zip
                     </sy    <buildDirectory>${project.build.directory}/allure-results</buildDirectory>
 stemPropertyVariables>-->
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>C:\Users\steed\.jenkins\workspace\test-google\allure-results</value>
+                        </property>
+                    </systemProperties>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>

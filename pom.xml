@@ -96,7 +96,7 @@ stemPropertyVariables>-->
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>C:\Users\steed\.jenkins\workspace\test-google\target\allure-results</value>
+                            <value>C:\Users\steed\.jenkins\workspace\test-google\allure-results</value>
                         </property>
                     </systemProperties>
                     <argLine>

@@ -3,21 +3,27 @@ package com.github.steed777.common.runner;
 
 import com.github.steed777.common.Application;
 import com.github.steed777.common.Browser;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
-import org.testng.annotations.AfterClass;
 
 
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.AfterClass;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
 @CucumberOptions (
         plugin = {
                 "pretty",
-                "json:target/cucumber.json"},
+              //  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+               // "json:target/cucumber.json"
+        },
         features = "src/test/resources/features/",
         glue = "com.github.steed777.steps")
-public class BDDRunner extends AbstractTestNGCucumberTests {
+public class BDDRunner{
 
 
-    @AfterClass(alwaysRun = true)
+    /*@AfterClass
     public void browserClose() {
 
         try {
@@ -26,5 +32,5 @@ public class BDDRunner extends AbstractTestNGCucumberTests {
         } catch (Exception ex) {
             Application.error("Что то пошло не так", ex);
         }
-    }
+    }*/
 }

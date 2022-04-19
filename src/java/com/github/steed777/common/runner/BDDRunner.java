@@ -9,16 +9,16 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 
-
 @CucumberOptions(
         plugin = {
                 "pretty",
-              //  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-               // "json:target/cucumber.json"
+                //  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                // "json:target/cucumber.json"
         },
         features = "src/test/resources/features/",
-       // allure-results = "target",
-        glue = "com.github.steed777.steps")
+        // allure-results = "target",
+        glue = "com.github.steed777.steps",
+        publish = true)
 public class BDDRunner extends AbstractTestNGCucumberTests {
 
 

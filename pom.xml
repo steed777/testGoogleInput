@@ -133,7 +133,9 @@
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-
+                            <property> <name>allure.results.directory</name>
+                                <value>C:\Users\steed\.jenkins\workspace\testGoogleInput</value>
+                            </property>
                         </property>
                     </systemProperties>
                 </configuration>

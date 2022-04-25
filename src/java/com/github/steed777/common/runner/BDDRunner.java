@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         plugin = {
                 "pretty",
-                //  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
                 // "json:target/cucumber.json"
         },
         features = "src/test/resources/features/",
